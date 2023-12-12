@@ -44,9 +44,9 @@ class Calculator {
   }
   calculate(expression){
     const cleanedExpression = expression.replace(/\s+/g,'');
-    console.log(cleanedExpression);
+    //console.log(cleanedExpression);
   const isVaildExpression = /^[0-9+\-*/(). ]+$/.test(cleanedExpression);
-  console.log(isVaildExpression);
+  //console.log(isVaildExpression);
   if(!isVaildExpression){
     throw new Error('Invaild expression');
   }
